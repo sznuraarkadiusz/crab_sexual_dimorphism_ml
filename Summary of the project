@@ -1,0 +1,24 @@
+LR:  [0.890171858216971, 0.5571428571428572, 0.6853421542278271, 0.5500369549150037]
+SVM [0.9272287862513426, 0.5555913113435237, 0.694838514941141, 0.5516629711751663]
+RF:  [0.7408700322234156, 0.5666461285684946, 0.6421505876876528, 0.5454545454545454]
+neural network [0.9229323308270677, 0.5565991902834008, 0.6944135771290029, 0.5528455284552846]
+
+SVM gamma='auto' [0.7408700322234156, 0.5666461285684946, 0.6421505876876528, 0.5454545454545454]
+SVM kernel='sigmoid' [0.9774436090225563, 0.5459727013649317, 0.7006062939081897, 0.5401330376940133]
+SVM degree=4 [0.9272287862513426, 0.5555913113435237, 0.694838514941141, 0.5516629711751663]
+
+-------------------------------------------------------------------------------------------------------
+
+Na podstawie powyższych wyników i testów przeprowadzonych na różnych modelach klasyfikacyjnych, można dokonać następującego podsumowania:
+1. Logistic Regression (LR): Model osiągnął dokładność na poziomie 0.550, co oznacza, że poprawnie sklasyfikował 55% obserwacji. Precyzja wyniosła 0.890, co oznacza, że 89% przewidywanych przez model etykiet było poprawnych. Recall wyniósł 0.557, co oznacza, że model poprawnie wykrył 55,7% obserwacji należących do klasy docelowej. F1 score wyniósł 0.685, co jest średnią harmoniczną precyzji i recall. Model ten można poprawić przez zastosowanie innych metod regularyzacji, strojenie hiperparametrów lub zastosowanie bardziej zaawansowanych technik uczenia maszynowego.
+2. Support Vector Machine (SVM): Model osiągnął podobne wyniki do Logistic Regression, z dokładnością wynoszącą 0.551. Oznacza to, że model poprawnie sklasyfikował 55,1% obserwacji. Precyzja wyniosła 0.927, recall wyniósł 0.556, a F1 score wyniósł 0.695. W przypadku SVM z jądrem sigmoidalnym dokładność była nieco niższa, ale warto zauważyć, że precyzja była bardzo wysoka (0.977), co oznacza, że większość przewidywanych etykiet była poprawna. W przypadku SVM można zastosować różne jądra i dostroić hiperparametry w celu poprawy wyników.
+3. Random Forest (RF): Model osiągnął dokładność na poziomie 0.545, co jest nieco niższe niż poprzednie modele. Precyzja wyniosła 0.741, recall wyniósł 0.567, a F1 score wyniósł 0.642. Random Forest jest algorytmem opartym na drzewach decyzyjnych, który może być bardziej skomplikowany do strojenia i optymalizacji niż inne modele.
+4. Neural Network: Model sieci neuronowej osiągnął podobne wyniki do Logistic Regression i SVM, z dokładnością wynoszącą 0.553. Precyzja wyniosła 0.923, recall wyniósł 0.557, a F1 score wyniósł 0.694. Sieci neuronowe są potężnym narzędziem, ale mogą wymagać większej liczby warstw i większej liczby neuronów w celu uzyskania lepszych wyników.
+
+
+Podsumowując, wszystkie modele osiągnęły podobne wyniki, ale istnieje możliwość korekty. Możliwe działania, które można podjąć w celu poprawy wyników to przykładowo:
+1. Dostosowanie hiperparametrów -> Można przetestować różne kombinacje hiperparametrów dla każdego modelu, takie jak współczynnik regularyzacji, liczba warstw i neuronów w sieci neuronowej, różne jądra dla SVM itp.
+2. Strojenie parametrów modelu -> Można dostroić parametry modelu, takie jak próg decyzyjny, aby zoptymalizować wyniki na podstawie konkretnego celu biznesowego.
+3. Inżynieria cech -> Można przeprowadzić analizę cech i zidentyfikować istotne cechy lub stworzyć nowe cechy, które mogą wpływać na lepsze wyniki modelu.
+4. Zastosowanie innych modeli -> Można przetestować inne modele klasyfikacyjne, takie jak Gradient Boosting (GB), K-Nearest Neighbors (KNN) itp., aby sprawdzić, czy osiągną lepsze wyniki w tej kombinacji.
+
