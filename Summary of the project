@@ -15,7 +15,6 @@ Na podstawie powyższych wyników i testów przeprowadzonych na różnych modela
 3. Random Forest (RF): Model osiągnął dokładność na poziomie 0.545, co jest nieco niższe niż poprzednie modele. Precyzja wyniosła 0.741, recall wyniósł 0.567, a F1 score wyniósł 0.642. Random Forest jest algorytmem opartym na drzewach decyzyjnych, który może być bardziej skomplikowany do strojenia i optymalizacji niż inne modele.
 4. Neural Network: Model sieci neuronowej osiągnął podobne wyniki do Logistic Regression i SVM, z dokładnością wynoszącą 0.553. Precyzja wyniosła 0.923, recall wyniósł 0.557, a F1 score wyniósł 0.694. Sieci neuronowe są potężnym narzędziem, ale mogą wymagać większej liczby warstw i większej liczby neuronów w celu uzyskania lepszych wyników.
 
-
 Podsumowując, wszystkie modele osiągnęły podobne wyniki, ale istnieje możliwość korekty. Możliwe działania, które można podjąć w celu poprawy wyników to przykładowo:
 1. Dostosowanie hiperparametrów -> Można przetestować różne kombinacje hiperparametrów dla każdego modelu, takie jak współczynnik regularyzacji, liczba warstw i neuronów w sieci neuronowej, różne jądra dla SVM itp.
 2. Strojenie parametrów modelu -> Można dostroić parametry modelu, takie jak próg decyzyjny, aby zoptymalizować wyniki na podstawie konkretnego celu biznesowego.
